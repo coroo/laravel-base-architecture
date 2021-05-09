@@ -11,7 +11,7 @@
 
 - You need to create your database first: e.g. `laravel-base-architecture`
 - Set up your .env:
-```
+```php
 APP_NAME=Laravel
 APP_ENV=local
 APP_KEY=base64:kV4pjZkELTB4hQ/CGy50fOVyTQ5/fY54z79XToYb1KU=
@@ -68,32 +68,32 @@ PUBLIC_CLIENT_SECRET=GTRcJowDi3hoWcsv1y4lnv28A3UkyabCQBH3vc3A
 ```
 
 - Install Dependencies
-```
+```bash
 composer install
 ```
 
 - Migrate Database
-```
+```bash
 php artisan migrate
 ```
 
 - Create Dummy Database
-```
+```bash
 php artisan db:seed
 ```
 
 - Auth from Laravel
-```
+```bash
 php artisan passport:install
 ```
 Then you will see Client ID 2, please add that to your .env again:
-```
+```bash
 PUBLIC_CLIENT_ID=2
 PUBLIC_CLIENT_SECRET=xxxxxxxxx //your client ID2
 ```
 
 - Link to Laravel Valet
-```
+```bash
 valet link
 valet secure
 ```
@@ -101,13 +101,13 @@ valet secure
 ### Additional Installation
 
 - Storage Permission
-```
+```bash
 sudo chown -R www-data:www-data storage
 chmod -R 775 storage
 ```
 
-- Icon
-```
+- Iconbash
+```bash
 npm install
 npm run prod
 ```
@@ -115,7 +115,7 @@ npm run prod
 - Access
 
 Go to `sudo nano /etc/hosts` & Add:
-```
+```bash
 127.0.0.1       laravel-base-architecture.test
 ```
 Dont forget to `sudo touch /etc/hosts`

@@ -106,7 +106,7 @@ sudo chown -R www-data:www-data storage
 chmod -R 775 storage
 ```
 
-- Iconbash
+- Icon
 ```bash
 npm install
 npm run prod

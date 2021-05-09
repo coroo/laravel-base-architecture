@@ -98,17 +98,27 @@ valet link
 valet secure
 ```
 
-- Storage Permission (Additional)
+### Additional Installation
+
+- Storage Permission
 ```
 sudo chown -R www-data:www-data storage
 chmod -R 775 storage
 ```
 
-- Icon (Additional)
+- Icon
 ```
 npm install
 npm run prod
 ```
+
+- Access
+
+Go to `sudo nano /etc/hosts` & Add:
+```
+127.0.0.1       laravel-base-architecture.test
+```
+Dont forget to `sudo touch /etc/hosts`
 
 Check data in your database.
 

@@ -12,12 +12,12 @@
 - You need to create your database first: e.g. `laravel-base-architecture`
 - Set up your .env:
 ```php
-APP_NAME=Laravel
+APP_NAME="Laravel Base Architecture"
 APP_ENV=local
-APP_KEY=base64:kV4pjZkELTB4hQ/CGy50fOVyTQ5/fY54z79XToYb1KU=
+APP_KEY=base64:sDVGDx+MZyMx8MfF2iSnfiNq4qe07i6wFBcpKPuphlk=
 APP_DEBUG=true
 APP_URL=https://laravel-base-architecture.test
-APP_PATH=/Users/kuncoro.barot/Documents/02.PlayingArround/laravel/laravel-base-architecture
+APP_PATH=/Users/kuncoro.barot/Documents/01.Sequislife/laravel-base-architecture
 APP_COPYRIGHT="Copyright 2020 ..."
 APP_AUTHORS="..."
 NOVA_PATH="/admin"
@@ -64,7 +64,7 @@ MIX_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
 MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
 
 PUBLIC_CLIENT_ID=2
-PUBLIC_CLIENT_SECRET=GTRcJowDi3hoWcsv1y4lnv28A3UkyabCQBH3vc3A
+PUBLIC_CLIENT_SECRET=Erzc1g3Gny9wQueRe3N5AFFy7ccKzjCbKgNEf4lF
 ```
 
 - Install Dependencies

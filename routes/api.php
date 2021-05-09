@@ -54,7 +54,7 @@ Route::group(['middleware' => ['auth:api', 'cors']], function () {
     Route::post('update-farah/{id}', 'Master\MasterFarahController@update');
 
     // export list
-    Route::get('export-ummat', 'Export\ExportController@ummatList');
+    Route::get('export-user', 'Export\ExportController@userList');
 
     // financial management
     Route::get('finansial', 'Account\UserFinancialController@all');

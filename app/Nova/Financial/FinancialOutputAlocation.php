@@ -102,7 +102,7 @@ class FinancialOutputAlocation extends Resource
                 ])->displayUsing(function ($value) {
                     return ucwords(str_replace('-', ' ', $value));
                 }),
-            BelongsTo::make('Ummat', 'user', 'App\Nova\User')->searchable(),
+            BelongsTo::make('User', 'user', 'App\Nova\User')->searchable(),
             Select::make('metode_finansial', 'metode_finansial')->options([
                     'transfer'  =>	'Transfer',
                     'cash'      =>	'Cash'

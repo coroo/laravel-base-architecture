@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Export;
 
-use App\Exports\UmmatListExport;
+use App\Exports\UserListExport;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Auth;
@@ -25,8 +25,8 @@ class ExportController extends Controller
         //
     }
     
-    public function ummatList() 
+    public function userList() 
     {
-        return Excel::download(new UmmatListExport, 'ummat_list_'.Carbon::now()->format('Ymd_His').'.xlsx');
+        return Excel::download(new UserListExport, 'user_list_'.Carbon::now()->format('Ymd_His').'.xlsx');
     }
 }

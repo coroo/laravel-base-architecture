@@ -9,7 +9,7 @@ use App\Nova\Account\UserAchievement;
 use App\Nova\Account\UserEducation;
 use App\Nova\Account\UserFamilies;
 use App\Nova\Account\UserJob;
-use App\Nova\Actions\Account\DownloadUmmatList;
+use App\Nova\Actions\Account\DownloadUserList;
 use App\Nova\Master\MasterFarah;
 use App\Nova\Master\MasterSyubah;
 use Laravel\Nova\Fields\ID;
@@ -40,7 +40,7 @@ class User extends Resource
     public static $group = 'Account';
     
     public static function label() {
-        return 'Data Ummat';
+        return 'User List';
     }
 
     /**
@@ -223,7 +223,7 @@ class User extends Resource
     public function actions(Request $request)
     {
         return [
-            (new DownloadUmmatList())
+            (new DownloadUserList())
         ];
     }
 

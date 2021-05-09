@@ -395,6 +395,6 @@
     "Show All Fields": "Show All Fields",
     
     "Access Nova": "Manage Access Nova",
-    "manageLogNewUserUploader": "Manage Ummat Uploader",
-    "viewLogNewUserUploader": "View Ummat Uploader"
+    "manageLogNewUserUploader": "Manage User Uploader",
+    "viewLogNewUserUploader": "View User Uploader"
 }

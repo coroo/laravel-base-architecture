@@ -64,7 +64,7 @@ class UserProfileController extends Controller
 
             $importResult = $this->logNewUserUploaderService->update(new Request([
                 'status' => 'success',
-                'result_info' => 'data ummat telah berhasil di masukkan'
+                'result_info' => 'User data has been successfully entered'
             ]), $id);
 
             return (new GeneralResource([

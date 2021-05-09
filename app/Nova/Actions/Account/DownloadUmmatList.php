@@ -10,7 +10,7 @@ use Illuminate\Support\Collection;
 use Laravel\Nova\Actions\Action;
 use Laravel\Nova\Fields\ActionFields;
 
-class DownloadUmmatList extends Action
+class DownloadUserList extends Action
 {
     use InteractsWithQueue, Queueable, SerializesModels;
 
@@ -30,7 +30,7 @@ class DownloadUmmatList extends Action
      */
     public function handle(ActionFields $fields, Collection $models)
     {
-        return Action::openInNewTab(env('APP_URL').'/api/v1/export-ummat');
+        return Action::openInNewTab(env('APP_URL').'/api/v1/export-user');
     }
 
     /**

@@ -25,7 +25,7 @@ class LogNewUserUploader extends Resource
     public static $group = 'Account';
     
     public static function label() {
-        return 'Unggah Ummat Baru';
+        return 'User Uploader';
     }
 
     /**
@@ -58,7 +58,7 @@ class LogNewUserUploader extends Resource
             File::make('Upload File', 'uploaded_file')
                 ->disk('public')
                 ->path('log-new-user-uploader'),
-            Heading::make('You can download template <a href="'.env('APP_URL').'/template/ummat-baru-template.xlsx" style="text-decoration:none;font-weight:bold">here</a>.')->onlyOnForms()->asHtml(),
+            Heading::make('You can download template <a href="'.env('APP_URL').'/template/user-baru-template.xlsx" style="text-decoration:none;font-weight:bold">here</a>.')->onlyOnForms()->asHtml(),
             Text::make('Status', 'status')->displayUsing(function ($value) {
                 return ucwords($value);
             })->sortable()->readonly()->hideWhenCreating()->hideWhenUpdating(),
